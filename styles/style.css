@@ -996,10 +996,7 @@ section.section-profile {
     font-weight: 600;
 }
 
-.result-item.banner {
-    aspect-ratio: 1 / 1.465;
-    background: url('../images/banner.svg') 50% 0% / contain no-repeat;
-}
+
 
 .result_btn {
     display: flex;
@@ -1110,7 +1107,59 @@ section.section-profile {
     z-index: -1;
     background: url('../images/bg/3.svg') 50% 0%/ cover no-repeat;
 }
-
+.banner-app {
+    padding: 0 !important;
+    overflow: hidden;
+    background: #FFFFFF;
+    border: 2px solid #9D63EA;
+    max-width: 300px !important;
+    margin: 0 auto;
+}
+.banner-app__img {
+    width: 100%;
+    aspect-ratio: 1 / 0.863;
+}
+.banner-app__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   object-position: top;
+}
+.banner-app__info {
+    padding: 0 10px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.banner-app__title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+    line-height: 13px;
+}
+.banner-app__logo {
+    max-width: 92px;
+    height: 15px;
+    width: 100%;
+    background: url('../images/kids-up-logo.svg') 50% / contain no-repeat;
+}
+.banner-app__btn-container {
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.banner-app__btn {
+    height: 50px;
+    display: block;
+}
+.banner-app__btn img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 .footer {
     background-color: #FFFFFF;
 
@@ -1394,11 +1443,7 @@ section.section-profile {
         max-width: none;
     }
 
-    .result-item.banner {
-        max-width: 300px;
-        justify-self: center;
-    }
-
+    
     .result_btns {
         flex-direction: column;
     }
