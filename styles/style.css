@@ -1114,6 +1114,8 @@ section.section-profile {
     border: 2px solid #9D63EA;
     max-width: 300px !important;
     margin: 0 auto;
+    width: 100%;
+    min-height: 0;
 }
 .banner-app__img {
     width: 100%;
@@ -1436,7 +1438,8 @@ section.section-profile {
     }
 
     .result-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .result-item {
